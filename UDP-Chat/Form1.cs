@@ -58,14 +58,10 @@ namespace UDP_Chat
                             else
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user), null);
-                                Connect = false;
-                                Send(new Message { message = null, user = message.user, Disconnect = false});
                             }
                             if (message.Disconnect)
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
-                                Connect = false;
-                                Send(new Message { message = null, user= message.user, Disconnect = true});
                             }
                         }
                         stream.Close();
@@ -120,7 +116,7 @@ namespace UDP_Chat
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Send(new Message { user = User.name, Disconnect = true});
+            Send(new Message { user = User.name, Disconnect = true });
         }
     }
 }
@@ -131,7 +127,7 @@ class Message
     [DataMember]
     public string? message { get; set; }
     [DataMember]
-    public string? user {  get; set; }
+    public string? user { get; set; }
     [DataMember]
     public bool Disconnect { get; set; }
 }

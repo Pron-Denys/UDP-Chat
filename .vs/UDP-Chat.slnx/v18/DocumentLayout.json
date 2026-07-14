@@ -114,7 +114,8 @@
               "RelativeToolTip": "UDP-Chat\\Form2.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAApwB4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T10:52:20.894Z"
+              "WhenOpened": "2026-07-14T10:52:20.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,7 +136,7 @@
               "RelativeDocumentMoniker": "UDP-Chat\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form1.cs",
               "RelativeToolTip": "UDP-Chat\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwD8AAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T10:11:30.591Z",
               "EditorCaption": ""
