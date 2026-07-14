@@ -49,29 +49,33 @@ namespace UDP_Chat
                         Message? message = serializer.ReadObject(stream) as Message;
                         if (message != null)
                         {
-                            if ((message.message == null) && (message.user == null))
+                            if ((message.message == null) && (message.user == null) && (message.Online_Users != null))
                             {
                                 uiContext.Send((parametr) => listBox1.DataSource = message.Online_Users, null);
                             }
-                            if (message.message != null)
-                            {
-                                uiContext.Send((parametr) =>
-                                {
-                                    listBox2.Items.Add($"[{DateTime.Now}] {message.user}");
-                                    listBox2.Items.Add(message.message);
-                                }, null);
-                            }
                             else
                             {
-                                Online_Users.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
-                                uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
-                                Send(new Message { message = null, user = null });
-                            }
-                            if (message.Disconnect)
-                            {
-                                Online_Users.Remove((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
-                                uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
-                                Send(new Message { message = null, user = null });
+                                if (message.message != null)
+                                {
+                                    uiContext.Send((parametr) =>
+                                    {
+                                        listBox2.Items.Add($"[{DateTime.Now}] {message.user}");
+                                        listBox2.Items.Add(message.message);
+                                    }, null);
+                                }
+                                else
+                                {
+                                    Online_Users.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
+                                    uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
+                                    Send(new Message { message = null, user = null });
+                                    Thread.Sleep(3000);
+                                }
+                                if (message.Disconnect)
+                                {
+                                    Online_Users.Remove((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
+                                    uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
+                                    Send(new Message { message = null, user = null });
+                                }
                             }
                         }
                         stream.Close();
