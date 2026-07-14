@@ -15,3 +15,4 @@ C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\refint\UD
 C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.pdb
 C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.genruntimeconfig.cache
 C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\ref\UDP-Chat.dll
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.sourcelink.json

@@ -28,7 +28,7 @@ namespace UDP_Chat
 
         private void Cancel(object sender, EventArgs e)
         {
-            User?.name = $"{IPAddress.Any}";
+            User?.name = null;
         }
     }
 }

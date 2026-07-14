@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\UDP-Chat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|C:\\Users\\User\\source\\repos\\UDP-Chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|C:\\Users\\User\\source\\repos\\UDP-Chat\\udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,19 +94,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
-              "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
-              "RelativeToolTip": "UDP-Chat\\Form2.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAApwB4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T10:52:20.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
@@ -110,8 +101,32 @@
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs [Design]",
               "RelativeToolTip": "UDP-Chat\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T10:46:50.942Z",
+              "WhenOpened": "2026-07-14T13:14:05.503Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
+              "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
+              "RelativeToolTip": "UDP-Chat\\Form2.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAApwB4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T10:52:20.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
+              "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs [Design]",
+              "RelativeToolTip": "UDP-Chat\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T10:46:50.942Z"
             },
             {
               "$type": "Document",
@@ -121,22 +136,21 @@
               "RelativeDocumentMoniker": "UDP-Chat\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form1.cs",
               "RelativeToolTip": "UDP-Chat\\Form1.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAIAwwHIAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwD8AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T10:11:30.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form1.cs",
               "RelativeDocumentMoniker": "UDP-Chat\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form1.cs [Design]",
               "RelativeToolTip": "UDP-Chat\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T09:43:50Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-14T09:43:50Z"
             }
           ]
         }
