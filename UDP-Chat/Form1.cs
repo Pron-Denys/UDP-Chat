@@ -10,10 +10,12 @@ namespace UDP_Chat
     {
         UserName User;
         bool Connect;
+        List<string> Online_Users;
         SynchronizationContext uiContext;
         public Form1()
         {
             InitializeComponent();
+            Online_Users = new List<string>();
             User = new UserName();
             Connect = false;
             uiContext = SynchronizationContext.Current!;
@@ -47,6 +49,10 @@ namespace UDP_Chat
                         Message? message = serializer.ReadObject(stream) as Message;
                         if (message != null)
                         {
+                            if ((message.message == null) && (message.user == null))
+                            {
+                                uiContext.Send((parametr) => listBox1.DataSource = message.Online_Users, null);
+                            }
                             if (message.message != null)
                             {
                                 uiContext.Send((parametr) =>
@@ -57,11 +63,15 @@ namespace UDP_Chat
                             }
                             else
                             {
-                                uiContext.Send((parametr) => listBox1.Items.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user), null);
+                                Online_Users.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
+                                uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
+                                Send(new Message { message = null, user = null });
                             }
                             if (message.Disconnect)
                             {
-                                uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
+                                Online_Users.Remove((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
+                                uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
+                                Send(new Message { message = null, user = null });
                             }
                         }
                         stream.Close();
@@ -130,6 +140,7 @@ class Message
     public string? user { get; set; }
     [DataMember]
     public bool Disconnect { get; set; }
+    public List<string>? Online_Users { get; set; }
 }
 
 class UserName
