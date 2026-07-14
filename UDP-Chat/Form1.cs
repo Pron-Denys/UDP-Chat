@@ -10,13 +10,11 @@ namespace UDP_Chat
     {
         UserName User;
         bool Connect;
-        List<string> Users_Online;
         SynchronizationContext uiContext;
         public Form1()
         {
             InitializeComponent();
             User = new UserName();
-            Users_Online = new List<string>();
             Connect = false;
             uiContext = SynchronizationContext.Current!;
             Form2 frm = new Form2(User);
@@ -41,7 +39,6 @@ namespace UDP_Chat
                         byte[] buf_bytes = new byte[1024];
                         EndPoint remote = new IPEndPoint(0xF70000, 100);
                         Connect = true;
-                        uiContext.Send((parametr) => listBox1.DataSource = Users_Online, null);
                         int len = socket.ReceiveFrom(buf_bytes, ref remote);
                         byte[] bytes = new byte[len];
                         Array.Copy(buf_bytes, 0, bytes, 0, len);
@@ -59,9 +56,17 @@ namespace UDP_Chat
                                 }, null);
                             }
                             else
-                                Users_Online.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
+                            {
+                                uiContext.Send((parametr) => listBox1.Items.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user), null);
+                                Connect = false;
+                                Send(new Message { message = null, user = message.user, Disconnect = false});
+                            }
                             if (message.Disconnect)
-                                Users_Online.Remove(message.user!);
+                            {
+                                uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
+                                Connect = false;
+                                Send(new Message { message = null, user= message.user, Disconnect = true});
+                            }
                         }
                         stream.Close();
                     }
