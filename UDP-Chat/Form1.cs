@@ -57,15 +57,19 @@ namespace UDP_Chat
                                     listBox2.Items.Add(message.message);
                                 }, null);
                             }
-                            else if (message.message == null && (message.Disconnect == false))
+                            else if ((message.message == null) && (message.Disconnect == false) && (Connect == true))
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
-                                int index = -1;
-                                uiContext.Send((parametr) => listBox1.Items.IndexOf(User.name!), null);
-                                if ((User.name != message.user) && (index == -1))
+                                if ((User.name != message.user))
                                 {
                                     Task task = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = false });
                                 }
+                            }
+                            int index = -1;
+                            uiContext.Send((parametr) => index = listBox1.Items.IndexOf(message.user!), null);
+                            if ((Connect == false) && (message.user != User.name) && (index == -1))
+                            {
+                                uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
                             }
                         }
                         stream.Close();
