@@ -63,7 +63,6 @@ namespace UDP_Chat
                             }
                             else if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true))
                             {
-                                uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
                                 if ((message.user == User.name) && (message.Connect == true))
                                 {
                                     Task task = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = false });
