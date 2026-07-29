@@ -62,7 +62,7 @@ namespace UDP_Chat
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
                                 int index = -1;
                                 uiContext.Send((parametr) => listBox1.Items.IndexOf(User.name!), null);
-                                if ((User.name != message.user) && (index != -1))
+                                if ((User.name != message.user) && (index == -1))
                                 {
                                     Task task = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = false });
                                 }
