@@ -49,7 +49,7 @@ namespace UDP_Chat
                         {
                             if (message.Disconnect)
                                 uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
-                            else if (message.message != null)
+                            else if ((message.message != null) && (message.Disconnect == false))
                             {
                                 uiContext.Send((parametr) =>
                                 {
@@ -57,7 +57,7 @@ namespace UDP_Chat
                                     listBox2.Items.Add(message.message);
                                 }, null);
                             }
-                            else if (message.message == null)
+                            else if (message.message == null && (message.Disconnect == false))
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
                         }
                         stream.Close();
