@@ -20,7 +20,7 @@ namespace UDP_Chat
             Form2 frm = new Form2(User);
             DialogResult result = frm.ShowDialog();
             WaitConnectClient();
-            Send(new Message { message = null, user = User.name, Disconnect = false });
+            Task tsk = Send(new Message { message = null, user = User.name, Disconnect = false });
         }
 
         private async void WaitConnectClient()
@@ -58,7 +58,13 @@ namespace UDP_Chat
                                 }, null);
                             }
                             else if (message.message == null && (message.Disconnect == false))
+                            {
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
+                                if (message.user != User.name)
+                                {
+                                    Task task = Send(new Message { message = null, user = User.name, Disconnect = false });
+                                }
+                            }
                         }
                         stream.Close();
                     }
@@ -104,7 +110,7 @@ namespace UDP_Chat
             if (textBox1.Text != "")
             {
                 Message message = new Message { message = textBox1.Text, user = User.name, Disconnect = false };
-                Send(message);
+                Task tsk = Send(message);
             }
             else
                 MessageBox.Show("Заповніть поле", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
