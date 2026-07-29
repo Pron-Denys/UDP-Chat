@@ -47,7 +47,7 @@ namespace UDP_Chat
                         Message? message = serializer.ReadObject(stream) as Message;
                         if (message != null)
                         {
-                            if (message.message != null && (message.Disconnect == false))
+                            if (message.message != null)
                             {
                                 uiContext.Send((parametr) =>
                                 {
@@ -55,9 +55,9 @@ namespace UDP_Chat
                                     listBox2.Items.Add(message.message);
                                 }, null);
                             }
-                            else
+                            else if (message.message == null)
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
-                            if (message.Disconnect)
+                            else if (message.Disconnect)
                                 uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
                         }
                         stream.Close();
