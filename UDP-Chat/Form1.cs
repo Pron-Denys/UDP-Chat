@@ -10,12 +10,10 @@ namespace UDP_Chat
     {
         UserName User;
         bool Connect;
-        List<string> Online_Users;
         SynchronizationContext uiContext;
         public Form1()
         {
             InitializeComponent();
-            Online_Users = new List<string>();
             User = new UserName();
             Connect = false;
             uiContext = SynchronizationContext.Current!;
@@ -49,34 +47,18 @@ namespace UDP_Chat
                         Message? message = serializer.ReadObject(stream) as Message;
                         if (message != null)
                         {
-                            if ((message.message == null) && (message.user == null) && (message.Online_Users != null))
+                            if (message.message != null && (message.Disconnect == false))
                             {
-                                uiContext.Send((parametr) => listBox1.DataSource = message.Online_Users, null);
+                                uiContext.Send((parametr) =>
+                                {
+                                    listBox2.Items.Add($"[{DateTime.Now}] {message.user}");
+                                    listBox2.Items.Add(message.message);
+                                }, null);
                             }
                             else
-                            {
-                                if (message.message != null)
-                                {
-                                    uiContext.Send((parametr) =>
-                                    {
-                                        listBox2.Items.Add($"[{DateTime.Now}] {message.user}");
-                                        listBox2.Items.Add(message.message);
-                                    }, null);
-                                }
-                                else
-                                {
-                                    Online_Users.Add((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
-                                    uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
-                                    Send(new Message { message = null, user = null });
-                                    Thread.Sleep(3000);
-                                }
-                                if (message.Disconnect)
-                                {
-                                    Online_Users.Remove((message.user == null) ? ((IPEndPoint)remote).Address.ToString() : message.user);
-                                    uiContext.Send((parametr) => listBox1.DataSource = Online_Users, null);
-                                    Send(new Message { message = null, user = null });
-                                }
-                            }
+                                uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
+                            if (message.Disconnect)
+                                uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
                         }
                         stream.Close();
                     }
@@ -130,7 +112,7 @@ namespace UDP_Chat
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Send(new Message { user = User.name, Disconnect = true });
+            Send(new Message { Disconnect = true });
         }
     }
 }
@@ -144,7 +126,6 @@ class Message
     public string? user { get; set; }
     [DataMember]
     public bool Disconnect { get; set; }
-    public List<string>? Online_Users { get; set; }
 }
 
 class UserName
