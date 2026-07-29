@@ -20,7 +20,7 @@ namespace UDP_Chat
             Form2 frm = new Form2(User);
             DialogResult result = frm.ShowDialog();
             WaitConnectClient();
-            Task tsk = Send(new Message { message = null, user = User.name, Disconnect = false });
+            Task tsk = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = true });
         }
 
         private async void WaitConnectClient()
@@ -60,7 +60,7 @@ namespace UDP_Chat
                             else if (message.message == null && (message.Disconnect == false))
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
-                                if (message.user != User.name)
+                                if (Connect)
                                 {
                                     Task task = Send(new Message { message = null, user = User.name, Disconnect = false });
                                 }
@@ -133,6 +133,8 @@ class Message
     public string? user { get; set; }
     [DataMember]
     public bool Disconnect { get; set; }
+    [DataMember]
+    public bool Connect { get; set; }
 }
 
 class UserName

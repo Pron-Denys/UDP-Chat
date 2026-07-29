@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UDP-Chat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2735ae35321565c772aa397525fcc942e1f7844b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0964929c16d325a4a3e2e9558a7c252312eebc4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("UDP-Chat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UDP-Chat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
