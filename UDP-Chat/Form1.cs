@@ -70,7 +70,7 @@ namespace UDP_Chat
             });
         }
 
-        private async void Send(Message message)
+        private async Task Send(Message message)
         {
             await Task.Run(() =>
             {
@@ -110,9 +110,10 @@ namespace UDP_Chat
                 MessageBox.Show("Заповніть поле", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private async void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Send(new Message { message = User.name, Disconnect = true });
+            Task tsk = Send(new Message { message = User.name, Disconnect = true });
+            await Task.Run(() => tsk.Wait());
         }
     }
 }

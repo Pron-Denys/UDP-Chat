@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|C:\\Users\\User\\source\\repos\\UDP-Chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|C:\\Users\\User\\source\\repos\\UDP-Chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
               "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
               "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
@@ -135,7 +135,7 @@
               "RelativeDocumentMoniker": "UDP-Chat\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form1.cs",
               "RelativeToolTip": "UDP-Chat\\Form1.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAEwCkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwDIAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T10:11:30.591Z",
               "EditorCaption": ""
