@@ -48,7 +48,7 @@ namespace UDP_Chat
                         if (message != null)
                         {
                             if (message.Disconnect)
-                                uiContext.Send((parametr) => listBox1.Items.Remove(message.user!), null);
+                                uiContext.Send((parametr) => listBox1.Items.Remove(message.message!), null);
                             else if ((message.message != null) && (message.Disconnect == false))
                             {
                                 uiContext.Send((parametr) =>
@@ -112,7 +112,7 @@ namespace UDP_Chat
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Send(new Message { Disconnect = true });
+            Send(new Message { message = User.name, Disconnect = true });
         }
     }
 }
