@@ -60,10 +60,7 @@ namespace UDP_Chat
                             else if ((message.message == null) && (message.Disconnect == false) && (Connect == true))
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
-                                if ((User.name != message.user))
-                                {
-                                    Task task = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = false });
-                                }
+                                Task task = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = false });
                             }
                             int index = -1;
                             uiContext.Send((parametr) => index = listBox1.Items.IndexOf(message.user!), null);
