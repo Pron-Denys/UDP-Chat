@@ -74,6 +74,7 @@ namespace UDP_Chat
                             if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true) && (User?.name == null))
                             {
                                 User?.name = remote.ToString();
+                                uiContext.Send((parametr) => listBox1.Items.Add(User?.name!), null);
                                 Task tsk = Send(new Message { message = null, user = remote.ToString(), Disconnect = false, Connect = false });
                             }
                         }
