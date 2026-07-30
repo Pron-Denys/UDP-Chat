@@ -74,7 +74,7 @@ namespace UDP_Chat
                             if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true) && (User?.name == null))
                             {
                                 User?.name = remote.ToString();
-                                Task tsk = Send(new Message { message = null, user = remote.ToString(), Disconnect = false, Connect = true });
+                                Task tsk = Send(new Message { message = null, user = remote.ToString(), Disconnect = false, Connect = false });
                             }
                         }
                         stream.Close();
