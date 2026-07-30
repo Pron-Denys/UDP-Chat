@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Message/Message.csproj" Id="78f63b72-ef99-4c16-b2b9-b2f65d1088f3" />
   <Project Path="UDP-Chat/UDP-Chat.csproj" />
+  <Project Path="UserName/UserName.csproj" Id="886131c3-8dee-4c10-abd4-829598937254" />
 </Solution>

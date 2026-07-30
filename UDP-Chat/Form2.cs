@@ -28,7 +28,12 @@ namespace UDP_Chat
 
         private void Cancel(object sender, EventArgs e)
         {
-            User?.name = null;
+            User?.name = IPAddress.Any.ToString();
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            User?.name = IPAddress.Any.ToString();
         }
     }
 }

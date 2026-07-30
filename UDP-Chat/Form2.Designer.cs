@@ -87,6 +87,7 @@
             MaximizeBox = false;
             Name = "Form2";
             Text = "UDP-Chat";
+            FormClosed += Form2_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

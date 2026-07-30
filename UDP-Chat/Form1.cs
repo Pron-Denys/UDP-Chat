@@ -6,6 +6,8 @@ namespace UDP_Chat
     using System.Net.Sockets;
     using System.Reflection.Metadata;
     using System.Runtime.Serialization.Json;
+    using Message;
+    using UserName;
     public partial class Form1 : Form
     {
         UserName User;
@@ -126,22 +128,4 @@ namespace UDP_Chat
             await Task.Run(() => tsk.Wait());
         }
     }
-}
-[Serializable]
-[DataContract]
-class Message
-{
-    [DataMember]
-    public string? message { get; set; }
-    [DataMember]
-    public string? user { get; set; }
-    [DataMember]
-    public bool Disconnect { get; set; }
-    [DataMember]
-    public bool Connect { get; set; }
-}
-
-class UserName
-{
-    public string? name { get; set; }
 }
