@@ -9,6 +9,7 @@ using System.Windows.Forms;
 namespace UDP_Chat
 {
     using System.Net;
+    using UserName;
     public partial class Form2 : Form
     {
         UserName? User;
@@ -28,12 +29,15 @@ namespace UDP_Chat
 
         private void Cancel(object sender, EventArgs e)
         {
-            User?.name = IPAddress.Any.ToString();
+            User?.name = null;
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            User?.name = IPAddress.Any.ToString();
+            if (textBox1.Text != "")
+                User?.name = textBox1.Text;
+            else
+                User?.name = null;
         }
     }
 }

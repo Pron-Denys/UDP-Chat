@@ -59,17 +59,22 @@ namespace UDP_Chat
                                     listBox2.Items.Add(message.message);
                                 }, null);
                             }
-                            else if ((message.message == null) && (message.Disconnect == false) && (message.Connect == false) && (message.user != User.name))
+                            else if ((message.message == null) && (message.Disconnect == false) && (message.Connect == false) && (message.user != User?.name))
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
                             }
-                            else if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true) && (message.user != User.name))
+                            else if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true) && (message.user != User?.name))
                             {
-                                Task task = Send(new Message { message = null, user = User.name, Disconnect = false, Connect = false });
+                                Task task = Send(new Message { message = null, user = User?.name, Disconnect = false, Connect = false });
                             }
-                            if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true))
+                            if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true) && (User?.name != null) && (message.user != null))
                             {
                                 uiContext.Send((parametr) => listBox1.Items.Add(message.user!), null);
+                            }
+                            if ((message.message == null) && (message.Disconnect == false) && (message.Connect == true) && (User?.name == null))
+                            {
+                                User?.name = remote.ToString();
+                                Task tsk = Send(new Message { message = null, user = remote.ToString(), Disconnect = false, Connect = true });
                             }
                         }
                         stream.Close();

@@ -16,3 +16,9 @@ C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.
 C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.genruntimeconfig.cache
 C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\ref\UDP-Chat.dll
 C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.sourcelink.json
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\bin\Debug\net10.0-windows\Message.dll
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\bin\Debug\net10.0-windows\UserName.dll
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\bin\Debug\net10.0-windows\Message.pdb
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\bin\Debug\net10.0-windows\UserName.pdb
+C:\Users\User\source\repos\UDP-Chat\UDP-Chat\obj\Debug\net10.0-windows\UDP-Chat.csproj.Up2Date

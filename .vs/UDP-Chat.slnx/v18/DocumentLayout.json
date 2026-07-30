@@ -7,14 +7,6 @@
       "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{886131C3-8DEE-4C10-ABD4-829598937254}|UserName\\UserName.csproj|c:\\users\\user\\source\\repos\\udp-chat\\username\\username.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886131C3-8DEE-4C10-ABD4-829598937254}|UserName\\UserName.csproj|solutionrelative:username\\username.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78F63B72-EF99-4C16-B2B9-B2F65D1088F3}|Message\\Message.csproj|c:\\users\\user\\source\\repos\\udp-chat\\message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78F63B72-EF99-4C16-B2B9-B2F65D1088F3}|Message\\Message.csproj|solutionrelative:message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|c:\\users\\user\\source\\repos\\udp-chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B637DB50-C1FC-0565-FC31-A293D0628BAD}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|C:\\Users\\User\\source\\repos\\UDP-Chat\\udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|solutionrelative:udp-chat\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886131C3-8DEE-4C10-ABD4-829598937254}|UserName\\UserName.csproj|c:\\users\\user\\source\\repos\\udp-chat\\username\\username.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886131C3-8DEE-4C10-ABD4-829598937254}|UserName\\UserName.csproj|solutionrelative:username\\username.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78F63B72-EF99-4C16-B2B9-B2F65D1088F3}|Message\\Message.csproj|c:\\users\\user\\source\\repos\\udp-chat\\message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78F63B72-EF99-4C16-B2B9-B2F65D1088F3}|Message\\Message.csproj|solutionrelative:message\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFDDD4EA-A087-4182-AB8A-045FE496AD1B}|UDP-Chat\\UDP-Chat.csproj|C:\\Users\\User\\source\\repos\\UDP-Chat\\udp-chat\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UserName.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UserName\\UserName.cs",
               "RelativeDocumentMoniker": "UserName\\UserName.cs",
@@ -110,12 +110,11 @@
               "RelativeToolTip": "UserName\\UserName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T10:13:44.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-30T10:13:44.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\Message\\Message.cs",
               "RelativeDocumentMoniker": "Message\\Message.cs",
@@ -123,12 +122,11 @@
               "RelativeToolTip": "Message\\Message.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T10:12:33.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-30T10:12:33.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
               "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
@@ -140,20 +138,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
               "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
               "RelativeToolTip": "UDP-Chat\\Form2.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAnwCMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T10:52:20.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form2.cs",
               "RelativeDocumentMoniker": "UDP-Chat\\Form2.cs",
@@ -170,7 +168,7 @@
               "RelativeDocumentMoniker": "UDP-Chat\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\UDP-Chat\\UDP-Chat\\Form1.cs",
               "RelativeToolTip": "UDP-Chat\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowE0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T10:11:30.591Z",
               "EditorCaption": ""
